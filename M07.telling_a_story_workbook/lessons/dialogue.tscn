@@ -1,31 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://bddwfljeh2thd"]
+[gd_scene load_steps=5 format=3 uid="uid://bddwfljeh2thd"]
 
-[ext_resource type="Texture2D" uid="uid://ogu21ixgdm50" path="res://assets/test.svg" id="1_fid5a"]
+[ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_1cblk"]
+[ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="2_rjqnu"]
+[ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_5dtme"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6cfwb"]
+shader = ExtResource("1_1cblk")
+shader_parameter/pattern_sampler = ExtResource("2_rjqnu")
+shader_parameter/bg_color = Color(0.68235296, 0.44313726, 1, 1)
+shader_parameter/pattern_color = Color(0.8509804, 0, 0, 1)
+shader_parameter/pattern_size = 256.0
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_6cfwb")
 layout_mode = 1
-offset_right = 960.0
-offset_bottom = 540.0
-texture = ExtResource("1_fid5a")
-expand_mode = 1
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -960.0
-offset_top = -540.0
-grow_horizontal = 0
-grow_vertical = 0
-texture = ExtResource("1_fid5a")
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Body" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.994
+offset_left = 12.0
+offset_top = 371.0
+offset_right = -139.0
+offset_bottom = -0.52001953
+texture = ExtResource("3_5dtme")
 expand_mode = 1
+stretch_mode = 5
