@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bddwfljeh2thd"]
+[gd_scene load_steps=6 format=3 uid="uid://bddwfljeh2thd"]
 
 [ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_1cblk"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="2_rjqnu"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_5dtme"]
+[ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="4_rjqnu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6cfwb"]
 shader = ExtResource("1_1cblk")
@@ -40,3 +41,32 @@ offset_bottom = -0.52001953
 texture = ExtResource("3_5dtme")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="Expression" type="TextureRect" parent="Body"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = 29.0
+offset_right = -11.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_rjqnu")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 74.0
+offset_top = 539.0
+offset_right = -238.0
+offset_bottom = -486.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hello World!"
