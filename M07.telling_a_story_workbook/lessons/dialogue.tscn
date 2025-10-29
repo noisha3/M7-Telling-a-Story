@@ -8,8 +8,8 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6cfwb"]
 shader = ExtResource("1_1cblk")
 shader_parameter/pattern_sampler = ExtResource("2_rjqnu")
-shader_parameter/bg_color = Color(0.68235296, 0.44313726, 1, 1)
-shader_parameter/pattern_color = Color(0.8509804, 0, 0, 1)
+shader_parameter/bg_color = Color(0, 0.003921569, 0.8862745, 1)
+shader_parameter/pattern_color = Color(1, 1, 0, 1)
 shader_parameter/pattern_size = 256.0
 
 [node name="Dialogue" type="Control"]
@@ -70,3 +70,18 @@ offset_bottom = -486.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Hello World!"
+
+[node name="NextButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -51.0
+offset_top = -39.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "next"
