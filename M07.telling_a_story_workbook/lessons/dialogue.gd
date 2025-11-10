@@ -14,22 +14,22 @@ var bodies :={
 var dialogue_items: Array[Dictionary] = [
 	{
 		"expression": expressions["happy"],
-		"text": "Hey Pink!",
+		"text": "Hey [rainbow]Pink![/rainbow]",
 		"character": bodies["sophia"],
 	},
 	{
 		"expression": expressions["happy"],
-		"text": "Hey Sophia!",
+		"text": "Hey [wave]Sophia![/wave]",
 		"character": bodies["pink"],
 	},
 	{
 		"expression": expressions["regular"],
-		"text": "Have you figured out what the G stands for in Noah G yet?",
+		"text": "Have you figured out what the [shake]G stands for in Noah G yet?[/shake]",
 		"character": bodies["sophia"],
 	},
 	{
 		"expression": expressions["sad"],
-		"text": "No. Not yet.",
+		"text": "No. [tornado]Not yet.[/tornado]",
 		"character": bodies["pink"],
 	},
 	{
@@ -39,17 +39,17 @@ var dialogue_items: Array[Dictionary] = [
 	},
 	{
 		"expression": expressions["regular"],
-		"text": "Have you?",
+		"text": "[wave]Have you?[/wave]",
 		"character": bodies["pink"],
 	},
 	{
 		"expression": expressions["happy"],
-		"text": "Yeah. It stands for GOAT",
+		"text": "Yeah. It stands for [rainbow]GOAT[/rainbow]",
 		"character": bodies["sophia"],
 	},
 	{
 		"expression": expressions["happy"],
-		"text": "Because he's the GOAT",
+		"text": "[shake]Because he's the GOAT[/shake]",
 		"character": bodies["sophia"],
 	},
 ]
